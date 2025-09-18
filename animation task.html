@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, black, rgb(114, 11, 11));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            background-image: linear-gradient(to right, rgb(131, 19, 19), rgb(184, 84, 8));
+            position: relative;
+            top: 95px;
+            border-radius: 25px;
+            
+        }
+        .circle{
+            width: 50px;
+            height: 50px;
+            background-image: linear-gradient(to right, rgb(184, 84, 8), yellow);
+            position: absolute;
+            border-radius: 50%;
+            animation-name: move;
+            animation-delay: 2s;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes move{
+            0%{
+                top: 0;
+                left:0;
+                background-image: linear-gradient(to right, rgb(184, 84, 8), yellow);
+            }
+            25%{
+                top:0;
+                left:90%;
+                background-image: linear-gradient(to right, yellow, rgb(122, 179, 9));
+            }
+            50%{
+                top:90%;
+                left:90%;
+                background-image: linear-gradient(to right, rgb(140, 184, 8), rgb(8, 93, 184));
+            }
+            75%{
+                top:90%;
+                left:0;
+                background-image: linear-gradient(to right, rgb(8, 93, 184), rgb(169, 18, 18));
+            }
+            100%{
+                top:0;
+                left:0;
+                background-image: linear-gradient(to right, rgb(169, 18, 18),rgb(184, 84, 8) );
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

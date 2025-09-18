@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Layout</title>
+  <style>
+    body {
+      padding: 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 5px;
+      min-height: 150px;
+      border-style: groove;
+    }
+
+    
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .row2 .box {
+      flex: 1;  
+    }
+
+    .row3 .box {
+      flex: 1;  
+    } 
+
+    
+    .box1 {
+      background: linear-gradient(to right, #1127a1b7, #904e95);
+      width: 100%;
+    }
+
+    .box2 { background: linear-gradient(to right, #9d3945c8, #df5567d2); }
+    .box3 { background: linear-gradient(to right, #ca1e99c9, #a6c1ee); }
+    .box4 { background: linear-gradient(to right, #9d3945c8, #df5567d2); }
+
+    .box5 { background: linear-gradient(to right, #1ea2acc7, #2a68bfd1); }
+    .box6 { background: linear-gradient(to right, #58b677, #5ac6b2); }
+
+    @media(max-width: 700px){
+        .row{
+            
+            flex-wrap: wrap;
+            flex-direction: column;
+            
+        }
+        .box{
+            min-width: 150px;
+            height: 250px;
+        }
+        .box1{
+           background: linear-gradient(to right, rgba(44, 226, 16, 0.934), yellow);
+           
+        }
+        .box2{
+            background: linear-gradient(to right, rgb(204, 77, 31), red);
+            
+        }
+        .box3{
+            background: linear-gradient(to right, rgba(18, 151, 67, 0.852), rgb(31, 164, 57));
+            
+        }
+        .box4{
+            background: linear-gradient(to right, blue, rgba(39, 25, 162, 0.872));
+            
+        }
+        .box5{
+            background: linear-gradient(to right, purple, rgb(200, 200, 227));
+            
+        }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Row 1 -->
+     <div class="row row1">
+    <div class="box box1">Box 1</div></div>
+
+    <!-- Row 2 -->
+    <div class="row row2">
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+      <div class="box box4">Box 4</div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row row3">
+      <div class="box box5">Box 5</div>
+      <div class="box box6">Box 6</div>
+    </div>
+  </div>
+</body>
+</html>

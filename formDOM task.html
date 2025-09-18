@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, purple, orange);
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            background: none;
+            border-radius: 10px;
+            font-size: large;
+        }
+        #box1{
+            position: relative;
+            left: 30px;
+        }
+        #box2{
+            position: relative;
+            left: 30px;
+        }
+        #div1{
+            form{
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 300px;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            font-size: 20px;
+            box-shadow: 10px 10px 15px rgb(0, 0, 0);
+        }}
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <form action="#" method="post">
+        Name:<input id="box1" name="Name" required type="text" style="font-size: large;"><br><br>
+        Email:<input id="box2" type="email" name="email"><br><br>
+        Password:<input id="box3" type="password" name="password" pattern="[a-z]{8,}" title="Password must be atleast 8 characters with no numbers"><br><br>
+        <input id="chk" type="checkbox" name="Checkbox" style="width: 15px; height: 15px;">I accept all the terms and conditions<br><br><br><br>
+        <input id="sub" type="submit" name="submit" disabled>
+        <input type="reset" name="Reset">
+    </form>
+    </div>
+    <script>
+        chk_btn=document.getElementById("chk");
+        sub_btn=document.getElementById("sub");
+
+        sub_btn.addEventListener("mouseover",(event)=>{
+                 sub_btn.style.backgroundColor="purple";
+        });
+           sub_btn.addEventListener("mouseout",(event)=>{
+                 sub_btn.style.backgroundColor="yellow";
+        });
+
+        chk_btn.addEventListener("change",(fn2)=>{
+             if(chk_btn.checked){
+                 sub_btn.removeAttribute("disabled");
+                 
+             }
+             else{
+                 sub_btn.setAttribute("disabled",true);
+             }
+        });  
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee{
+            constructor(name, id, designation, basic_pay, allowance, incentive){
+                this.name=name;
+                this.id=id;
+                this.designation=designation;
+                this.basicpay=basic_pay;
+                this.allowance=allowance;
+                this.incentive=incentive;
+            }
+            print(){
+                document.write("Name:"+this.name+"<br>");
+                document.write("ID:"+this.id+"<br>");
+                document.write("Designation:"+this.designation+"<br>");
+                document.write("Basic pay:"+this.basicpay+"<br>");
+                document.write("Allowance:"+this.allowance+"<br>");
+                document.write("Incentive:"+this.incentive+"<br>");
+            }
+        }
+        let arr=[];
+        let opt=Number(prompt("Enter the no. of Employees:"));
+        for(let i=1;i<=opt;i++){
+            let name=prompt("Enter the name"+i+":");
+            let id=Number(prompt("Enter the ID"+i+":"));
+            let designation=prompt("Enter your designation"+i+":");
+            let basic_pay=Number(prompt("Enter you Pay"+i+":"));
+            let allowance=Number(prompt("Enter your allowance"+i+":"));
+            let incentive=Number(prompt("Enter your incentive"+i+":"));
+            let obj=new Employee(name, id, designation, basic_pay, allowance, incentive);
+            arr.push(obj);
+        }
+        for(let j=0;j<arr.length;j++){
+            arr[j].print();
+        }
+    </script>
+</body>
+</html>

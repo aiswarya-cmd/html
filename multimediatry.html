@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+    }
+    h1 {
+      color: red;
+      text-align: center;
+      margin-top: 20px;
+    }
+    h2 {
+      color: white;
+      margin-top: 10px;
+    }
+
+    /* Container for each trailer */
+    .trailer-container {
+      position: relative;
+      display: inline-block; /* So they sit side by side */
+      margin: 40px;
+    }
+
+    /* Image styling */
+    .trailer-container img {
+      width: 600px;
+      height: 300px;
+      display: block;
+    }
+
+    /* Button initially hidden */
+    .trailer-container .button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      visibility: hidden;
+      padding: 10px 20px;
+      background: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+
+    /* Hover effect */
+    .trailer-container:hover img {
+      filter: opacity(50%);
+    }
+    .trailer-container:hover .button {
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+  <h1><b>Trailers</b></h1>
+
+  <!-- First trailer -->
+  <div class="trailer-container">
+    <img src="./images/demon slayer trailer.jpeg" alt="demon slayer trailer">
+    <h2>Demon Slayer: Kimetsu no Yaiba</h2>
+    <button class="button">
+      <a href="task10trail1.html" target="_self" style="color:white; text-decoration:none;">GO TO TRAILER</a>
+    </button>
+  </div>
+
+  <!-- Second trailer -->
+  <div class="trailer-container">
+    <img src="./images/beyond the bar.jpeg" alt="beyond the bar trailer">
+    <h2>Beyond the Bar</h2>
+    <button class="button">
+      <a href="task10trail2.html" target="_self" style="color:white; text-decoration:none;">GO TO TRAILER</a>
+    </button>
+  </div>
+</body>
+</html>

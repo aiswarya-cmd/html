@@ -1,0 +1,14 @@
+<script>
+    x = Number(prompt("Enter the first side:"));
+    y = Number(prompt("Enter the second side:"));
+    z = Number(prompt("Enter the third side:"));
+    if(x == y && y == z && z == z){
+        document.write("Triangle is equilateral");
+    }
+    else if(x == y || y == z || z == x){
+        document.write("Triangle is isosceles");
+    }
+    else{
+        document.write("Traingle is scalene");
+    }
+</script>

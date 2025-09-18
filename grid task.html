@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-color: rgb(3, 3, 39);
+         }
+         .container{
+            display: grid;
+            grid-template-rows: repeat(4, 100px);
+            grid-template-columns: repeat(6, 150px);
+            row-gap: 10px;
+            column-gap: 10px;
+            translate: 20% 25%;
+         }
+         .box1{
+            background-image: linear-gradient(to right, blueviolet, black);
+            grid-area: 1/1/2/7;
+         }
+         h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 10px;
+         }
+         .box2{
+             background-image: linear-gradient(to right, blueviolet, black);
+            grid-area: 2/1/5/4;
+         }
+         .box3{
+             background-image: linear-gradient(to right, blueviolet, black);
+            grid-area: 2/4/5/7;
+         }
+         form{
+            height: 250px;
+            width: 470px;
+            margin-top: 10px;
+            position: relative;
+            top: -1px;
+            left: 10px;
+            button{
+                margin-left: 10px;
+                position: relative;
+                left: 178px;
+                top: -1px;
+            }
+            .I1{
+                margin-left: 10px;
+                position: relative;
+                left: 72px;
+            }
+            .I2{
+                margin-left: 10px;
+                position: relative;
+                left: 70px;
+            }
+            .I3{
+                margin-left: 10px;
+                position: relative;
+                left: 49px;
+            }
+            .I4{
+                margin-left: 10px;
+                position: relative;
+                left: 47px;
+            }
+            .I5{
+                margin-left: 10px;
+                position: relative;
+                left: -10px;
+            }
+
+            input{
+                /* width: 200px;
+                height: 40px; */
+                padding: 10px;
+                background: none;
+                border: 1px solid white;
+                border-radius: 10px;
+            }
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1>Register Here</h1>
+        </div>
+        <div class="box2">
+            <form>
+                <label for="name"><b>Name</b></label>
+                <input class="I1" type="text" required><br><br>
+                <label for="email"><b>Email</b></label>
+                <input class="I2" type="email" required><br><br>
+                <label for="phnum"><b>Phone no</b></label>
+                <input class="I3" type="text"maxlength="10" required> <br><br>
+                <label for="password"><b>Password</b></label>
+                <input class="I4" type="password"pattern="[a-zA-Z0-9]+" required><br><br>  
+                <label for="pass"><b>Confirm Password</b></label>
+                <input class="I5" type="password"pattern="[a-zA-Z0-9]+" required><br><br>
+                <button><b>Submit</b></button>    
+            </form>
+        </div>
+        <div class="box3">
+            <svg class="svg1" width="100" height="75" style="border: none;">
+                <circle r="37" cx="0" cy="0" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="37" cx="75" cy="75" fill="black" stroke="white" stroke-width="10"/>
+            </svg>
+            <svg class="svg1" width="100" height="75" style="border: none;">
+                <ellipse cx="20" cy="50" rx="30" ry="10" fill="black" stroke="white" stroke-width="7"/>
+                <ellipse cx="10" cy="50" rx="10" ry="30" fill="black" stroke="white" stroke-width="7"/>
+                <circle r="37" cx="100" cy="0" fill="black" stroke="white" stroke-width="10"/>
+            </svg>
+            <svg class="svg1" width="100" height="75" style="border: none;">
+                <circle r="37" cx="0" cy="0" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="37" cx="75" cy="75" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="37" cx="75" cy="0" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="37" cx="0" cy="75" fill="black" stroke="white" stroke-width="10"/>
+            </svg>
+            <svg class="svg1" width="100" height="75" style="border: none;">
+                <circle r="37" cx="0" cy="0" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="37" cx="75" cy="75" fill="black" stroke="white" stroke-width="10"/>
+            </svg>
+            <svg class="svg1" width="50" height="75" style="border: none;">
+                <circle r="37" cx="0" cy="0" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="37" cx="75" cy="75" fill="black" stroke="white" stroke-width="10"/>
+            </svg>
+            <svg class="svg1" width="100" height="75" style="border: none;">
+                <circle r="37" cx="0" cy="0" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="37" cx="75" cy="75" fill="black" stroke="white" stroke-width="10"/>
+            </svg>
+            <svg class="svg1" width="100" height="75" style="border: none;">
+                <circle r="15" cx="20" cy="20" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="15" cx="80" cy="20" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="15" cx="20" cy="55" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="15" cx="80" cy="55" fill="black" stroke="white" stroke-width="10"/>
+            </svg>
+
+            </svg>
+            <svg class="svg1" width="100" height="75" style="border: none;">
+                <circle r="37" cx="0" cy="0" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="37" cx="75" cy="75" fill="black" stroke="white" stroke-width="10"/>
+            </svg>
+            <svg class="svg1" width="100" height="75" style="border: none;">
+                <circle r="37" cx="0" cy="0" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="37" cx="75" cy="75" fill="black" stroke="white" stroke-width="10"/>
+            </svg>
+            <svg class="svg1" width="50" height="75" style="border: none;">
+                <circle r="37" cx="0" cy="0" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="37" cx="75" cy="75" fill="black" stroke="white" stroke-width="10"/>
+            </svg>
+            <svg class="svg1" width="100" height="75" style="border: none;">
+                <circle r="37" cx="0" cy="0" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="37" cx="75" cy="75" fill="black" stroke="white" stroke-width="10"/>
+            </svg>
+            <svg class="svg1" width="100" height="75" style="border: none;">
+                <circle r="37" cx="0" cy="0" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="37" cx="75" cy="75" fill="black" stroke="white" stroke-width="10"/>
+            </svg>
+            <svg class="svg1" width="100" height="75" style="border: none;">
+                <circle r="37" cx="0" cy="0" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="37" cx="75" cy="75" fill="black" stroke="white" stroke-width="10"/>
+            </svg>
+            <svg class="svg1" width="100" height="75" style="border: none;">
+                <circle r="30" cx="50" cy="37" fill="black" stroke="white" stroke-width="10"/>
+                <line x1="20" y1="10" x2="80" y2="65" stroke="white" stroke-width="10"/>
+            <line x1="80" y1="10" x2="20" y2="65" stroke="white" stroke-width="10"/>
+</svg>
+
+            </svg>
+            <svg class="svg1" width="50" height="75" style="border: none;">
+                <circle r="37" cx="0" cy="0" fill="black" stroke="white" stroke-width="10"/>
+                <circle r="37" cx="75" cy="75" fill="black" stroke="white" stroke-width="10"/>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
